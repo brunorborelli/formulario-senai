@@ -1,0 +1,21 @@
+<h2>Lista de Pessoas</h2>
+<table>
+  <thead>
+    <tr>
+      <th>FirstName</th>
+      <th>LastName</th>
+      <th>Email</th>
+      <th>Phone</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr *ngFor="let pessoa of pessoas">
+      <td>{{ pessoa.firstName }}</td>
+      <td>{{ pessoa.lastName }}</td>
+      <td>{{ pessoa.email }}</td>
+      <td>{{ pessoa.phone }}</td>
+    </tr>
+  </tbody>
+</table>
+
+<button  [routerLink]="['../formulario']" class="submit-button">Cadastrar nova pessoa</button>
